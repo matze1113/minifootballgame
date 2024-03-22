@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footballgame</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Verweis auf das Stylesheet -->
+</head>
+<body>
+    <h1>Kleines Footballgame</h1>
+    <div id="instructions">
+        <h2>Spielanleitung</h2>
+        <p>Verwende die Pfeiltasten links und rechts, um den Spieler zu bewegen.</p>
+        <p>Drücke die Leertaste, um den Ball zu schießen.</p>
+    </div>
+    <div id="app-container"></div>
+    <div id="game-over-banner">Game Over</div> <!-- Game Over Banner hinzufügen -->
+    <div id="reset-button-container">
+        <button id="reset-button">Reset</button> <!-- Reset Button hinzufügen -->
+    </div>
+    <div id="score-container">
+        Punktestand: <span id="score">0</span>
+    </div>
+    <div id="highscore-container">
+        Highscore: <span id="highscore">0</span>
+    </div>
+    <footer>
+        &copy; Mathias Popow
+    </footer>
+    <script src="gameloop.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/pixi.js@5.3.3/dist/pixi.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
+
